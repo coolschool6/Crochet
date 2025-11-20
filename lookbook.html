@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lookbook — Granny Gallery</title>
+  <meta name="description" content="Fullscreen crochet lookbook with auto-advance and swipe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body class="lookbook-body">
+  <a class="skip-link" href="#lookbook">Skip to lookbook</a>
+
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">🧶</span>
+      <a class="brand-text" href="index.html">Granny Gallery</a>
+    </div>
+  </header>
+
+  <main class="lookbook-main" role="main">
+    <section id="lookbook" class="lookbook" aria-label="Lookbook slideshow">
+      <!-- Slides inserted by JS -->
+      <div class="lookbook-controls">
+        <button id="lbPrev" class="lb-btn" aria-label="Previous">‹</button>
+        <button id="lbNext" class="lb-btn" aria-label="Next">›</button>
+        <button id="lbPlayPause" class="lb-btn" aria-label="Pause slideshow">❚❚</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Back to Gallery</a>
+    </nav>
+  </footer>
+
+  <script defer src="scripts/main.js"></script>
+</body>
+</html>
