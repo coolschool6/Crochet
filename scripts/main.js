@@ -23,7 +23,8 @@
 
   // Entry
   window.addEventListener('DOMContentLoaded', async () => {
-    byId('year').textContent = new Date().getFullYear();
+    const yearEl = byId('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
     try {
       const res = await fetch('data/images.json');
       const data = await res.json();
